@@ -4,8 +4,8 @@ script ini adalah tool untuk mempermudah dalam membuat webserver yang akan digun
 
 Script ini hanya untuk OS ubuntu 16.04
 
+## Step 
 ```
-Step 
 git clone https://github.com/doko89/mikbotam-server.git
 cd mikbotam-server
 bash run.sh
