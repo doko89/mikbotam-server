@@ -2,7 +2,7 @@
 
 
 ## vars
-tools="unzip curl"
+tools="unzip curl supervisor"
 pkgs="nginx php7.2-fpm php7.2-curl mysql-server"
 dbname="mikbotam"
 urlmikbotam="https://cloud.mikbotam.net/index.php?share/fileDownload&user=1&sid=yGfNZkWq"
@@ -62,6 +62,16 @@ configsrv(){
     sed -i "s+'database_name' => 'bangacil'+'database_name' => '$dbname'+" $webconf
     sed -i "s+admin12345+$PASS+" $webconf
     sed -i "s+bangacil+root+" $webconf
+
+    ## config supervisor
+    cp templates/supervisor.conf /etc/supervisor/conf.d/mikbotam.conf
+}
+
+restartsrv(){
+    systemctl restart nginx
+    systemctl restart php7.2-fpm
+    systemctl restart mysql
+    systemctl restart supervisor
 }
 
 if [ "$process" == "y" ];then
