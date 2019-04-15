@@ -76,5 +76,6 @@ restartsrv(){
 if [ "$process" == "y" ];then
     installsrv
     configsrv
+    restartsrv
 fi
 
