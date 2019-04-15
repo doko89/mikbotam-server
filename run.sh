@@ -3,7 +3,7 @@
 
 ## vars
 tools="unzip curl supervisor"
-pkgs="nginx php7.2-fpm php7.2-curl mysql-server"
+pkgs="nginx php7.2-fpm php7.2-curl php7.2-cli mysql-server"
 dbname="mikbotam"
 urlmikbotam="https://cloud.mikbotam.net/index.php?share/fileDownload&user=1&sid=yGfNZkWq"
 
