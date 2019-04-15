@@ -30,10 +30,10 @@ read -p "Lanjutkan : (y/n) " process
 
 installsrv(){
     echo "test"
-    #add-apt-repository -y ppa:ondrej/php 2> /dev/null |echo "install php repository"
-    #apt-get update 2> /dev/null |echo "update repository"
-    #apt-get install -y $tools 2> /dev/null |echo "install extra tools"
-    #apt-get install -y $pkgs  2> /dev/null |echo "install nginx php-fpm mysql"
+    add-apt-repository -y ppa:ondrej/php 2> /dev/null |echo "install php repository"
+    apt-get update 2> /dev/null |echo "update repository"
+    apt-get install -y $tools 2> /dev/null |echo "install extra tools"
+    apt-get install -y $pkgs  2> /dev/null |echo "install nginx php-fpm mysql"
 }
 configsrv(){
 
