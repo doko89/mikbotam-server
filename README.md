@@ -4,6 +4,8 @@ script ini adalah tool untuk mempermudah dalam membuat webserver yang akan digun
 
 Script ini hanya untuk OS ubuntu 16.04
 
+Script ini bisa di jalan kan di rasberry pi + ubuntu server
+
 nginx + php-fpm + mysql
 
 ## Step 
