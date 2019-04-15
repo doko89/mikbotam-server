@@ -2,8 +2,8 @@
 
 
 ## vars
-tools="unzip"
-pkgs="nginx php7.2-fpm mysql-server"
+tools="unzip curl"
+pkgs="nginx php7.2-fpm php7.2-curl mysql-server"
 dbname="mikbotam"
 urlmikbotam="https://cloud.mikbotam.net/index.php?share/fileDownload&user=1&sid=yGfNZkWq"
 
